@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #92bde7;
+	color: #485e74;
+	line-height: 1.6;
+	font-family: "Segoe UI", Verdana, Arial, sans-serif;
+	padding: 1em;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+	padding: 1em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.brand {
+	text-align: center;
+}
+
+.brand span {
+	color: #fff;
+}
+
+.wrapper {
+	box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+}
+
+.wrapper > * {
+	padding: 1em;
+}
+
+.company-info {
+	background-color: #c9e6ff;
+	text-align: center;
+}
+
+.contact {
+	background-color: #EAFBFF;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.grid-container label {
+	display: block;
+}
+
+.grid-container p {
+	margin: 0;
+}
+
+.full {
+	grid-column: 1 / 3;
+}
+
+.grid-container input, .grid-container button, .grid-container textarea {
+	width: 100%;
+	padding: 0.5em;
+	border: 1px solid #c9e6ff;
+}
+
+.grid-container button {
+	background-color: #c9e6ff;
+	color: #485e74;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: 0;
+	cursor: pointer;
+	padding: 1em;
+}
+
+.grid-container button:hover, .grid-container button:focus {
+	background-color: #92bde7;
+	color: #fff;
+	outline: 0;
+	box-shadow: 0 0 5px 0 rgba(72,94,116,0.7);
+	transition: background-color 0.8s ease;
+}
+
+@media screen and (max-width: 480px) {
+	.grid-item {
+		grid-column: 1 / 3;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.wrapper > * {
+		padding: 2em;
+	}
+
+	.brand, .company-info {
+		text-align-last: left;
+	}
+}
